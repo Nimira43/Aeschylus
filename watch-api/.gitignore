@@ -1,0 +1,21 @@
+# .NET
+bin/
+obj/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Visual Studio
+.vscode/
+.vs/
+
+# Build Folders
+build/
+Build/
+[Bb]in/
+[Oo]bj/
