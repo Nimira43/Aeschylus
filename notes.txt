@@ -1,0 +1,3 @@
+To create a Go Module file      - 
+
+go mod init github.com/yourusername/projectname
