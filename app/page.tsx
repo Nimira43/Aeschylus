@@ -1,11 +1,9 @@
-import React from 'react'
-
-function HomePage() {
+export default function Home() {
   return (
-    <div className='p-8 bg-main'>
-      <h1 className='logo text-light text-4xl font-medium '>Forum Vitae</h1>
-    </div>
+    <main>
+      <header className='max-w-6xl mx-auto px-4 sm:px-8 py-6'>
+        <h1 className='logo'>Forum Vitae</h1>
+      </header>
+    </main>
   )
 }
-
-export default HomePage
