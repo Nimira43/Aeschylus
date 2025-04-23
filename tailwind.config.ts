@@ -9,10 +9,16 @@ const config: Config = {
   ],
   theme: {
   	extend: {
-  		colors: {
-  			main: '#ff4500',
-  			dark: '#111',
-  			light: '#fffcfa',
+			colors: {
+				'main': '#008080',
+				'main-dark': '#012222',
+				'main-light': '#012222',
+				'support': '#ff4500',
+				'support-dark': '#ffbf00',
+				'support-medium': '#ffd700',
+  			'support-light': '#ffffad',
+  			'dark': '#111',
+  			'light': '#fffcfa',
   			'grey-light-extra': '#eee',
   			'grey-light': '#ccc',
   			'grey-medium': '#999',
