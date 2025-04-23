@@ -14,7 +14,7 @@ const config: Config = {
 				'main-dark': '#012222',
 				'main-light': '#012222',
 				'support': '#ff4500',
-				'support-dark': '#ffbf00',
+				'support-dark': '#ffa600',
 				'support-medium': '#ffd700',
   			'support-light': '#ffffad',
   			'dark': '#111',
