@@ -1,7 +1,5 @@
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import Image from 'next/image'
-import LandingImage from '../assets/hero.svg' 
 
 export default function Home() {
   return (
@@ -21,7 +19,6 @@ export default function Home() {
             <Link href='/add-job'>Get Started</Link>
           </Button>
         </div>
-        <Image src={LandingImage} alt='Landing Image' className='hidden lg:block' />
       </section>
     </main>
   )
