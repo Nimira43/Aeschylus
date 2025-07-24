@@ -1,7 +1,8 @@
 function App() {
   return (
-    <div>
-      <h1>Forum Vitae</h1>
+    <div className='temp-container'>
+      <h1 className='logo'>Forum Vitae</h1>
+      <p>Coming Soon</p>
     </div>
   )
 }

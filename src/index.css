@@ -20,5 +20,29 @@
 .logo {
   font-family: 'Bitcount Prop Single', system-ui;
   font-weight: 400;
+  font-size: 4rem;
+  color: var(--main)
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.temp-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-light-extra);
+  color: var(--grey-dark);
+  overflow: hidden;
+}
+
+p {
+  color: var(--support);
 }
 
