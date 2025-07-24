@@ -5,7 +5,20 @@
   font-weight: 300;
 }
 
+:root {
+  --main: #008080;
+  --support: #ff4500;
+  --gold: #ffd700;
+  --dark: #111;
+  --light: #fffcfa;
+  --grey-dark: #333;
+  --grey-medium: #999;
+  --grey-light: #ccc;
+  --grey-light-extra: #eee;
+}
+
 .logo {
   font-family: 'Bitcount Prop Single', system-ui;
   font-weight: 400;
 }
+
