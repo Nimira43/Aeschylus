@@ -3,11 +3,13 @@ function App() {
     <div className='container'>
       <div className='row'>
         <div className='col'>
-          <h1 className='text-grey-light bg-dark logo'>Aeschylus</h1>
+          <h1 className='text-prime logo'>Aeschylus</h1>
+        </div>
+        <div className='col text-end'>
+          <a href='#' className='bg-prime text-light button'>Login
+          </a>
         </div>
       </div>
-      
-      <p>Coming Soon</p>
     </div>
   )
 }
