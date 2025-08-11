@@ -8,12 +8,12 @@ function App() {
           <h2 className='text-prime logo'>Aeschylus</h2>
         </div>
         <div className='col text-end mt-4'>
-          <a 
-            href='/' 
+          <Link 
+            to='/login' 
             className='bg-prime text-light button'
           >
             Login
-          </a>
+          </Link>
         </div>
         <hr className='mb-3'></hr>
       </div>
