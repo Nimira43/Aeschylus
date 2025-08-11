@@ -1,3 +1,5 @@
+import Hero from '../images/hero.png'
+
 const Home = () => {
   return (
     <>
