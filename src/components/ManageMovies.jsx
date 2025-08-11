@@ -1,7 +1,7 @@
 const ManageMovies = () => {
   return (
     <div className='text-center'>
-      <h2 className='text-prime logo'>ManageMovies</h2> 
+      <h2 className='text-prime logo'>Manage Movies</h2> 
     </div>
   )
 }

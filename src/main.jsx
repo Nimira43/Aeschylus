@@ -10,6 +10,7 @@ import Genres from './components/Genres.jsx'
 import EditMovie from './components/EditMovie.jsx'
 import ManageMovies from './components/ManageMovies.jsx'
 import GraphQL from './components/GraphQL.jsx'
+import Login from './components/Login.jsx'
 
 const router = createBrowserRouter([
   {
@@ -34,12 +35,16 @@ const router = createBrowserRouter([
         element: <EditMovie />
       },
       {
-        path: '/admin', 
+        path: '/manage-movies', 
         element: <ManageMovies />
       },
       {
         path: '/graphql', 
         element: <GraphQL />
+      },
+      {
+        path: '/login', 
+        element: <Login />
       },
     ] 
   }

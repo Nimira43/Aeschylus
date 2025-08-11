@@ -46,7 +46,7 @@ function App() {
                 Add Movie
               </Link>
               <Link 
-                to='/admin'
+                to='/manage-movies'
                 className='list-group-item list-group-item-action'
               >
                 Manage Movies
