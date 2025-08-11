@@ -1,3 +1,5 @@
+import Home from "./components/Home"
+
 function App() {
   return (
     <div className='container'>
@@ -35,7 +37,7 @@ function App() {
           </nav>
         </div>
         <div className='col-md-10'>
-
+          <Home />
         </div>
       </div>
     </div>
