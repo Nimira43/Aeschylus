@@ -33,6 +33,30 @@ function App() {
               >
                 Movies
               </a>
+              <a 
+                href='#'
+                className='list-group-item list-group-item-action'
+              >
+                Genres
+              </a>
+              <a 
+                href='#'
+                className='list-group-item list-group-item-action'
+              >
+                Add Movie
+              </a>
+              <a 
+                href='#'
+                className='list-group-item list-group-item-action'
+              >
+                Manage
+              </a>
+              <a 
+                href='#'
+                className='list-group-item list-group-item-action'
+              >
+                Graph QL
+              </a>
             </div>
           </nav>
         </div>
