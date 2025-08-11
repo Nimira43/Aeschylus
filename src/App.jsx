@@ -49,7 +49,7 @@ function App() {
                 to='/admin'
                 className='list-group-item list-group-item-action'
               >
-                Admin
+                Manage Movies
               </Link>
               <Link 
                 to='/graphql'
