@@ -34,25 +34,25 @@ function App() {
                 Movies
               </Link>
               <Link 
-                to='/'
+                to='/genres'
                 className='list-group-item list-group-item-action'
               >
                 Genres
               </Link>
               <Link 
-                href='/'
+                href='/admin/movie/0'
                 className='list-group-item list-group-item-action'
               >
                 Add Movie
               </Link>
               <Link 
-                to='/'
+                to='/admin'
                 className='list-group-item list-group-item-action'
               >
-                Manage
+                Admin
               </Link>
               <Link 
-                to='/'
+                to='/graphql'
                 className='list-group-item list-group-item-action'
               >
                 Graph QL
