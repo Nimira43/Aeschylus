@@ -6,6 +6,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './components/ErrorPage.jsx'
 import Home from './components/Home.jsx'
 import Movies from './components/Movies.jsx'
+import Genres from './components/Genres.jsx'
+import EditMovie from './components/EditMovie.jsx'
+import ManageMovies from './components/ManageMovies.jsx'
+import GraphQL from './components/GraphQL.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,7 +24,23 @@ const router = createBrowserRouter([
       {
         path: '/movies', 
         element: <Movies />
-      }
+      },
+      {
+        path: '/genres', 
+        element: <Genres />
+      },
+      {
+        path: '/admin/movie/0', 
+        element: <EditMovie />
+      },
+      {
+        path: '/admin', 
+        element: <ManageMovies />
+      },
+      {
+        path: '/graphql', 
+        element: <GraphQL />
+      },
     ] 
   }
 ])
