@@ -9,7 +9,7 @@ function App() {
         </div>
         <div className='col text-end mt-4'>
           <a 
-            href='#' 
+            href='#!' 
             className='bg-prime text-light button'
           >
             Login
@@ -22,37 +22,37 @@ function App() {
           <nav>
             <div className='list-group'>
               <a 
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Home
               </a>
               <a 
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Movies
               </a>
               <a 
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Genres
               </a>
               <a 
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Add Movie
               </a>
               <a 
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Manage
               </a>
               <a 
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Graph QL
