@@ -1,14 +1,11 @@
-import Hero from '../images/hero.png'
-
-const Home = () => {
+const Movies = () => {
   return (
     <>
       <div className='text-center'>
-        <h2 className='text-prime logo'>Movie Search</h2>
-        <img src={Hero} alt='Hero image' />
+        <h2 className='text-prime logo'>Movies</h2> 
       </div>
     </>
   )
 }
 
-export default Home
+export default Movies
