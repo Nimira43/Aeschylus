@@ -30,6 +30,7 @@ const Movies = () => {
         description: 'Decades after surviving the Nostromo incident, Ellen Ripley is recruited by the military to return to the moon LV-426, where contact has been lost with a human colony. Accompanied by a squad of Colonial Marines, Ripley must confront the terrifying alien species once again—only this time, there are hundreds of them. As the team is picked off one by one, Ripley forms a bond with a young survivor named Newt and prepares for a final showdown with the Alien Queen.'
       }
     ]
+    setMovies(moviesList)
   })
 
   return (
