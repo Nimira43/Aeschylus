@@ -1,7 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Movies = () => {
   const [movies, setMovies] = useState([]) 
+
+  useEffect(() => {
+    let moviesList = [
+      {}
+    ]
+  })
 
   return (
     <div className='text-center'>
