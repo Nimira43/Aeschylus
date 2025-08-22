@@ -47,7 +47,11 @@ const Movies = () => {
         <tbody>
           {movies.map((movie) => (
             <tr key={movie.id}>
-              
+              <td>
+                <Link to={`/movies/${movie.id}`}>
+                  {movie.title}
+                </Link>
+              </td>
             </tr>
           ))}
         </tbody>
