@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Movies = () => {
   const [movies, setMovies] = useState([]) 
@@ -52,6 +53,8 @@ const Movies = () => {
                   {movie.title}
                 </Link>
               </td>
+              <td>{movie.releaseDate}</td>
+              <td>{movie.mpaa_rating}</td>
             </tr>
           ))}
         </tbody>

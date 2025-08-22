@@ -40,7 +40,7 @@ function App() {
                 Genres
               </Link>
               <Link 
-                href='/admin/movie/0'
+                href='/admin/movies/0'
                 className='list-group-item list-group-item-action'
               >
                 Add Movie
