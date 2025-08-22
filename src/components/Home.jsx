@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Hero from '../images/hero.png'
 
 const Home = () => {
@@ -5,7 +6,11 @@ const Home = () => {
     <>
       <div className='text-center'>
         <h2 className='text-prime logo'>Movie Search</h2>
-        <img src={Hero} alt='Hero image' />
+        <Link
+          to='/movies'
+        >
+          <img src={Hero} alt='Hero image' />
+        </Link>
       </div>
     </>
   )
