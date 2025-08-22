@@ -41,8 +41,16 @@ const Movies = () => {
           <tr>
             <th>Movie</th>
             <th>Release Date</th>
+            <th>Rating</th>
           </tr>
         </thead>
+        <tbody>
+          {movies.map((movie) => (
+            <tr key={movie.id}>
+              
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   )
