@@ -31,11 +31,19 @@ const Movies = () => {
       }
     ]
     setMovies(moviesList)
-  })
+  }, [])
 
   return (
     <div className='text-center'>
       <h2 className='text-prime logo'>Movies</h2> 
+      <table className='table table-striped table-hover'>
+        <thead>
+          <tr>
+            <th>Movie</th>
+            <th>Release Date</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   )
 }
