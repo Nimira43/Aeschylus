@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 function App() {
+  const [jwtToken, setJwtToken] = useState()
+
   return (
     <div className='container'>
       <div className='row'>
