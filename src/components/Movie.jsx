@@ -19,7 +19,10 @@ const Movie = () => {
 
   return (
     <div className='text-center'>
-      <h2 className='text-prime logo'>{movie.title}</h2> 
+      <h2>{movie.title}</h2>
+      <small><em>{movie.releaseDate}, {movie.runtime} mins, {movie.mpaa_rating}</em></small>
+      <hr />
+      <p>{movie.description}</p> 
     </div>
   )
 }
