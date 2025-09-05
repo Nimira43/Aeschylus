@@ -50,24 +50,28 @@ function App() {
               >
                 Genres
               </Link>
-              <Link 
-                href='/admin/movies/0'
-                className='list-group-item list-group-item-action'
-              >
-                Add Movie
-              </Link>
-              <Link 
-                to='/manage-movies'
-                className='list-group-item list-group-item-action'
-              >
-                Manage Movies
-              </Link>
-              <Link 
-                to='/graphql'
-                className='list-group-item list-group-item-action'
-              >
-                Graph QL
-              </Link>
+              {jwtToken !== '' &&
+                <>
+                  <Link 
+                    href='/admin/movies/0'
+                    className='list-group-item list-group-item-action'
+                  >
+                    Add Movie
+                  </Link>
+                  <Link 
+                    to='/manage-movies'
+                    className='list-group-item list-group-item-action'
+                  >
+                    Manage Movies
+                  </Link>
+                  <Link 
+                    to='/graphql'
+                    className='list-group-item list-group-item-action'
+                  >
+                    Graph QL
+                  </Link>
+                </>
+              }
             </div>
           </nav>
         </div>
