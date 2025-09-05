@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 const Movie = () => {
   const [movie, setMovie] = useState({}) 
   let { id } = useParams()
+
+  useEffect(() => {
+
+  }, [id])
 
   return (
     <div className='text-center'>
