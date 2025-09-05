@@ -18,7 +18,12 @@ function App() {
               >
                 Login
               </Link>
-            : <a href="#">Logged In</a>
+            : <a 
+                href="#"
+                className='bg-prime text-light button'
+              >
+                Logout
+              </a>
           }
         </div>
         <hr className='mb-3'></hr>
