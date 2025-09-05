@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 function App() {
-  const [jwtToken, setJwtToken] = useState()
+  const [jwtToken, setJwtToken] = useState('')
 
   return (
     <div className='container'>
@@ -11,12 +11,15 @@ function App() {
           <h2 className='text-prime logo'>Aeschylus</h2>
         </div>
         <div className='col text-end mt-4'>
-          <Link 
-            to='/login' 
-            className='bg-prime text-light button'
-          >
-            Login
-          </Link>
+          {jwtToken === ''
+            ? <Link 
+                to='/login' 
+                className='bg-prime text-light button'
+              >
+                Login
+              </Link>
+            : <a href="#">Logged In</a>
+          }
         </div>
         <hr className='mb-3'></hr>
       </div>
