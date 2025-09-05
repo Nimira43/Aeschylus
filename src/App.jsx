@@ -75,7 +75,7 @@ function App() {
             </div>
           </nav>
         </div>
-        <div className='col-md-10 mb-10'>
+        <div className='col-md-10 mt-4'>
           <Outlet />
         </div>
       </div>
