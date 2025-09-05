@@ -14,11 +14,12 @@ const Movie = () => {
       mpaa_rating: 'PG',
       description: 'The Rebel Alliance aims to destroy the tyrannical Empire\'s ultimate weapon, the Death Star. When the rebel leader Princess Leia is captured by the Empire, Luke Skywalker acquires stolen architectural plans for the Death Star and sets out to rescue her while learning the ways of the Force from the Jedi Master Obi-Wan Kenobi.'
     }
+    setMovie(myMovie)
   }, [id])
 
   return (
     <div className='text-center'>
-      <h2 className='text-prime logo'>Single Movie</h2> 
+      <h2 className='text-prime logo'>{movie.title}</h2> 
     </div>
   )
 }
