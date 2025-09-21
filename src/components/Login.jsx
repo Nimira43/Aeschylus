@@ -11,7 +11,7 @@ const Login = () => {
 
   return (
     <div className='col-md-6 offset-md-3'>
-      <h2 className='text-prime logo'>Login</h2> 
+      <h2 className='uppercase'>Login</h2> 
       <hr />
       <form 
         onSubmit={handleSubmit}

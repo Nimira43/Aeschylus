@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div className='text-center'>
-        <h2 className='text-prime logo'>Movie Search</h2>
+        <h2 className='uppercase'>Movie Search</h2>
         <Link
           to='/movies'
         >
