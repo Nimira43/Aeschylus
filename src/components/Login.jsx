@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Input from './form/input'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -11,7 +12,19 @@ const Login = () => {
   return (
     <div className='col-md-6 offset-md-3'>
       <h2 className='text-prime logo'>Login</h2> 
-      
+      <hr />
+      <form 
+        onSubmit={handleSubmit}
+      >
+        <Input 
+          title='Email Address'
+          type='email'
+          className='form=control'
+          name='email'
+          autoComplete='email-new'
+          onChange={(event) => setEmail(event.target.value)}
+        />
+      </form>
     </div>
   )
 }
