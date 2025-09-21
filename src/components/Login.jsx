@@ -9,8 +9,9 @@ const Login = () => {
   }
 
   return (
-    <div className='text-center'>
+    <div className='col-md-6 offset-md-3'>
       <h2 className='text-prime logo'>Login</h2> 
+      
     </div>
   )
 }
