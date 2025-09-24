@@ -87,7 +87,7 @@ function App() {
             jwtToken, 
             setJwtToken,
             setAlertClassName,
-            setAlertMessage
+            setAlertMessage,
           }}/>
         </div>
       </div>

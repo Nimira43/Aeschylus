@@ -6,6 +6,8 @@ const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const { setJwtToken } = useOutletContext()
+  const { setAlertClassName } = useOutletContext()
+  const { setAlertMessage } = useOutletContext()
 
   const handleSubmit = (event) => {
     event.preventDefault()
