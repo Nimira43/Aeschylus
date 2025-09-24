@@ -7,6 +7,10 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
+
+    if (email == 'admin@example.com') {
+      
+    }
   }
 
   return (
