@@ -17,6 +17,9 @@ const Login = () => {
       setJwtToken('abc')
       setAlertClassName('d-none')
       setAlertMessage('')
+    } else {
+      setAlertClassName('alert-danger')
+      setAlertMessage('Incorrect credentials.')
     }
   }
 
