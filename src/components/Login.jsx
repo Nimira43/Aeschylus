@@ -9,7 +9,7 @@ const Login = () => {
   const { setAlertClassName } = useOutletContext()
   const { setAlertMessage } = useOutletContext()
 
-  const navigate = useNavigate
+  const navigate = useNavigate()
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -19,6 +19,7 @@ const Login = () => {
       setJwtToken('abc')
       setAlertClassName('d-none')
       setAlertMessage('')
+      navigate('/')
     } else {
       setAlertClassName('bg-prime text-light uppercase heavy-weight')
       setAlertMessage('Incorrect credentials.')
