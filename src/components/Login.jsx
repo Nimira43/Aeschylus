@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import Input from './form/input'
+import { useOutletContext } from 'react-router-dom'
 
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const { setJwtToken } = useOutletContext
 
   const handleSubmit = (event) => {
     event.preventDefault()
 
     if (email == 'admin@example.com') {
-      
+
     }
   }
 
