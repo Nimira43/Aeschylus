@@ -15,6 +15,8 @@ const Login = () => {
 
     if (email === 'admin@example.com') {
       setJwtToken('abc')
+      setAlertClassName('d-none')
+      setAlertMessage('')
     }
   }
 
