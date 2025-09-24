@@ -4,6 +4,7 @@ import Alert from './components/Alert'
 
 function App() {
   const [jwtToken, setJwtToken] = useState('')
+  const [alertMessage, setAlertMessage] = useState('')
 
   return (
     <div className='container'>
