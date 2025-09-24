@@ -5,13 +5,14 @@ import { useOutletContext } from 'react-router-dom'
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const { setJwtToken } = useOutletContext
+  const { setJwtToken } = useOutletContext()
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    console.log("Email / Password: ", email, password)
 
     if (email == 'admin@example.com') {
-
+      setJwtToken('abc')
     }
   }
 
