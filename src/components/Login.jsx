@@ -11,7 +11,7 @@ const Login = () => {
     event.preventDefault()
     console.log("Email / Password: ", email, password)
 
-    if (email == 'admin@example.com') {
+    if (email === 'admin@example.com') {
       setJwtToken('abc')
     }
   }
