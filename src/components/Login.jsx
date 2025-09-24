@@ -18,7 +18,7 @@ const Login = () => {
       setAlertClassName('d-none')
       setAlertMessage('')
     } else {
-      setAlertClassName('alert-danger')
+      setAlertClassName('bg-prime text-light uppercase heavy-weight')
       setAlertMessage('Incorrect credentials.')
     }
   }

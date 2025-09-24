@@ -139,6 +139,10 @@
   text-transform: uppercase;
 }
 
+.heavy-weight {
+  font-weight: 500
+}
+
 .mt-1 { margin-top: 0.25rem; }
 .mt-2 { margin-top: 0.5rem; }
 .mt-3 { margin-top: 0.75rem; }
