@@ -79,6 +79,10 @@ function App() {
           </nav>
         </div>
         <div className='col-md-10 mt-4'>
+          <Alert 
+            message={alertMessage}
+            className={alertClassName}
+          />
           <Outlet context={{
             jwtToken, setJwtToken
           }}/>
