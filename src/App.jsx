@@ -13,7 +13,6 @@ function App() {
     navigate('/login')
   }
 
-
   return (
     <div className='container'>
       <div className='row'>
@@ -29,7 +28,8 @@ function App() {
                 Login
               </Link>
             : <a 
-                href="#"
+                href='#'
+                onClick={logout}
                 className='bg-prime text-light button'
               >
                 Logout
