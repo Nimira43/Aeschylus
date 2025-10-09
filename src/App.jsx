@@ -7,6 +7,11 @@ function App() {
   const [alertMessage, setAlertMessage] = useState('')
   const [alertClassName, setAlertClassName ] = useState('d-none')
 
+  const logout = () => {
+    
+  }
+
+
   return (
     <div className='container'>
       <div className='row'>
