@@ -22,4 +22,6 @@ func (app *application) Home(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err)
 	}
+
+	w.Header().Set("Content-Type", "application.json")
 }
