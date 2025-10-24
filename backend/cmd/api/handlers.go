@@ -6,5 +6,5 @@ import (
 )
 
 func (app *application) Home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Hello Aeshylus!!!")
+	fmt.Fprintf(w, "Hello there from %s", app.Domain)
 }
