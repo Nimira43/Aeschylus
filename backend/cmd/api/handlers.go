@@ -1,10 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 )
 
 func (app *application) Home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello there from %s", app.Domain)
+	var payload = struct {
+		Status string `json:"status"`,
+		Message string `json:"message"`,
+		Version string `json:"version"`,
+	}
 }
