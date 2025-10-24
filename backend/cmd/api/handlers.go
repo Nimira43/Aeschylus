@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"net/http"
 )
 
@@ -14,4 +15,6 @@ func (app *application) Home(w http.ResponseWriter, r *http.Request) {
 		Message: "Aeschylus up and running",
 		Version: "1.0.0",
 	}
+
+	out, err := json.Marshal(payload)
 }
