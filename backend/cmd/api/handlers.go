@@ -45,5 +45,19 @@ func (app *application) AllMovies(w http.ResponseWriter, r *http.Request) {
 		CreatedAt: time.Now(),
 		UpdatedAt: time.Now(),
 	}
+
 	movies = append(movies, starWars)
+	
+	raidersOfTheLostArk := models.Movie {
+		ID: 2,
+		Title: "Raiders of the Lost Ark",
+		ReleaseDate: rd,
+		MPAARating: "PG",
+		RunTime: 115,
+		Description: "Set in 1936, Indiana Jones, a globetrotting archaeologist, faces Nazi German forces to recover the long-lost Ark of the Covenant which is said to make an army invincible. Teaming up with his tough former romantic interest Marion Ravenwood, Jones races to stop rival archaeologist René Belloq  from guiding the Nazis to the Ark and its power.",
+		CreatedAt: time.Now(),
+		UpdatedAt: time.Now(),
+	}
+
+	
 }
