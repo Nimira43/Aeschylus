@@ -32,12 +32,14 @@ func (app *application) Home(w http.ResponseWriter, r *http.Request) {
 func (app *application) AllMovies(w http.ResponseWriter, r *http.Request) {
 	var movie []models.Movie
 
+	rd, _ := time.Parse("2006-01-02","1977-05-25")
+
 	starWars := models.Movie {
 		ID: 1,
 		Title: "Star Wars",
-		ReleaseDate: time.Parse("2006-01-02","1977-05-25"),
-		runtime: 121,
-		// mpaa_rating: 'PG',
-		// description: 'The Rebel Alliance aims to destroy the tyrannical Empire\'s ultimate weapon, the Death Star. When the rebel leader Princess Leia is captured by the Empire, Luke Skywalker acquires stolen architectural plans for the Death Star and sets out to rescue her while learning the ways of the Force from the Jedi Master Obi-Wan Kenobi.'
+		ReleaseDate: rd,
+		MPAARating: "PG",
+		RunTime: 121,
+		Description: "The Rebel Alliance aims to destroy the tyrannical Empire's ultimate weapon, the Death Star. When the rebel leader Princess Leia is captured by the Empire, Luke Skywalker acquires stolen architectural plans for the Death Star and sets out to rescue her while learning the ways of the Force from the Jedi Master Obi-Wan Kenobi."
 	}
 }
