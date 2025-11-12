@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"time"
 )
 
 func (app *application) Home(w http.ResponseWriter, r *http.Request) {
@@ -30,7 +31,7 @@ func (app *application) Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func (app *application) AllMovies(w http.ResponseWriter, r *http.Request) {
-	var movie []models.Movie
+	var movies []models.Movie
 
 	rd, _ := time.Parse("2006-01-02","1977-05-25")
 
@@ -40,6 +41,9 @@ func (app *application) AllMovies(w http.ResponseWriter, r *http.Request) {
 		ReleaseDate: rd,
 		MPAARating: "PG",
 		RunTime: 121,
-		Description: "The Rebel Alliance aims to destroy the tyrannical Empire's ultimate weapon, the Death Star. When the rebel leader Princess Leia is captured by the Empire, Luke Skywalker acquires stolen architectural plans for the Death Star and sets out to rescue her while learning the ways of the Force from the Jedi Master Obi-Wan Kenobi."
+		Description: "The Rebel Alliance aims to destroy the tyrannical Empire's ultimate weapon, the Death Star. When the rebel leader Princess Leia is captured by the Empire, Luke Skywalker acquires stolen architectural plans for the Death Star and sets out to rescue her while learning the ways of the Force from the Jedi Master Obi-Wan Kenobi.",
+		CreatedAt: time.Now(),
+		UpdatedAt: time.Now(),
 	}
+	movies = append(movies, starWars)
 }
