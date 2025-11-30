@@ -18,7 +18,9 @@ const Movies = () => {
       .then((data) => {
         setMovies(data)
       })
-
+      .catch(err => {
+        console.log(err)
+      })
   }, [])
 
   return (
