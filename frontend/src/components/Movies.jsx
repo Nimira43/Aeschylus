@@ -15,7 +15,9 @@ const Movies = () => {
 
     fetch(`http://localhost:8080/movies`, requestOptions)
       .then((response) => response.json())
-      
+      .then((data) => {
+        setMovies(data)
+      })
 
   }, [])
 
