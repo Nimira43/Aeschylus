@@ -6,6 +6,11 @@ const Movies = () => {
 
   useEffect(() => {
     const headers = new Headers()
+    headers.append('Content-Type', 'application/json')
+
+    const requestOptions = {
+      
+    }
   }, [])
 
   return (
