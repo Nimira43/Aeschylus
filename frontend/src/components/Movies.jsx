@@ -9,8 +9,11 @@ const Movies = () => {
     headers.append('Content-Type', 'application/json')
 
     const requestOptions = {
-      
+      method: 'GET',
+      headers: headers,
     }
+
+    
   }, [])
 
   return (
