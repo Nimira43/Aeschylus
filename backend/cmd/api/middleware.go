@@ -7,7 +7,8 @@ func (app *application) enableCORS(h http.Handler) http.Handler {
 		w.Header().Set("Access-Control-Allow-Origin", "http://*")
 
 		if r.Method == "OPTIONS" {
-			w.Header().Set("Access-Control-Allow-Credentials")
+			w.Header().Set("Access-Control-Allow-Credentials", "true")
+			w.Header().Set("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE,OPTIONS")
 		}
 	})
 }
