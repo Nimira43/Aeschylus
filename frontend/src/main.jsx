@@ -13,47 +13,54 @@ import ManageMovies from './components/ManageMovies.jsx'
 import GraphQL from './components/GraphQL.jsx'
 import Login from './components/Login.jsx'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          index: true, 
+          element: <Home />
+        },
+        {
+          path: '/movies', 
+          element: <Movies />
+        },
+        {
+          path: '/movies/:id', 
+          element: <Movie />
+        },
+        {
+          path: '/genres', 
+          element: <Genres />
+        },
+        {
+          path: '/admin/movie/0', 
+          element: <EditMovie />
+        },
+        {
+          path: '/manage-movies', 
+          element: <ManageMovies />
+        },
+        {
+          path: '/graphql', 
+          element: <GraphQL />
+        },
+        {
+          path: '/login', 
+          element: <Login />
+        },
+      ],   
+    }
+  ],
   {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true, 
-        element: <Home />
-      },
-      {
-        path: '/movies', 
-        element: <Movies />
-      },
-      {
-        path: '/movies/:id', 
-        element: <Movie />
-      },
-      {
-        path: '/genres', 
-        element: <Genres />
-      },
-      {
-        path: '/admin/movie/0', 
-        element: <EditMovie />
-      },
-      {
-        path: '/manage-movies', 
-        element: <ManageMovies />
-      },
-      {
-        path: '/graphql', 
-        element: <GraphQL />
-      },
-      {
-        path: '/login', 
-        element: <Login />
-      },
-    ] 
+    future: {
+      v7_startTransition: true, 
+    },
   }
-])
+)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
